@@ -1,0 +1,19 @@
+name: StaffNotify
+version: 2.0
+author: Zeryther
+website: http://wod.gigadrivegroup.tk
+main: tk.Zeryther.staffnotify.StaffNotify
+
+commands:
+  staffchat:
+    description: Use the staffchat
+    aliases: [a, adminchat, ac, sc]
+  report:
+    description: Report a message to the server team
+    aliases: [ticket, helpop]
+  reportreply:
+    description: Answer to a report
+    aliases: [rr, rreply, ticketreply, treply, helpreply, hreply, hr, tr]
+  staffnotify:
+    description: Plugin info
+    aliases: [sn, sninfo]
