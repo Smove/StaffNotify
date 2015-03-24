@@ -19,20 +19,6 @@ public class cmd_staffchat implements CommandExecutor {
 		this.plugin = plugin;
 	}
 	
-	/*
-	 
-	 TEMPLATE
-	 
-	 @Override
-	public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
-		
-		if(cmd.getName().equalsIgnoreCase("")){
-			
-		}
-		
-		return false;
-	}*/
-	
 	@Override
 	public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
 		
