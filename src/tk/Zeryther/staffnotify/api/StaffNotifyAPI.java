@@ -25,9 +25,9 @@ public class StaffNotifyAPI {
 		}
 	}
 	
-	public static void createNotification(String msg, String suffix){
+	public static void createNotification(String msg, String suffix, String permission){
 		for(Player all : Bukkit.getOnlinePlayers()){
-			if(all.hasPermission("staffnotify.seenotify.custom")){
+			if(all.hasPermission(permission)){
 				all.sendMessage("§7[§cStaffNotify§7|§r" + suffix + "§7] §r" + msg);
 			}
 		}

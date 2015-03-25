@@ -21,7 +21,7 @@ public class StaffNotify extends JavaPlugin {
 			this.setEnabled(false);
 		}
 		
-		saveDefaultConfig();
+		//saveDefaultConfig();
 		_registerCommands();
 		_registerListeners();
 	}
