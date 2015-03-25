@@ -57,6 +57,8 @@ public class cmd_reportreply implements CommandExecutor {
 				if(Bukkit.getPlayer(args[0]) == null){
 					CONSOLE.sendMessage("§cThat player could not be found.");
 				} else {
+					Player p2 = Bukkit.getPlayer(args[0]);
+					
 					StringBuilder sb = new StringBuilder();
 					for (int i = 1; i < args.length; i++) {
 					sb.append(" ").append(args[i]);
@@ -64,6 +66,7 @@ public class cmd_reportreply implements CommandExecutor {
 					
 					String finalMsg = sb.toString().substring(1);
 					
+					p2.sendMessage("§7[§cStaffNotify§7|§r" + StaffNotifyType.REPORT_REPLY.getSuffix() + "§7] §r§dCONSOLE§7: §f" + finalMsg);
 					StaffNotifyAPI.createNotification("§dCONSOLE§7: §f" + finalMsg, StaffNotifyType.REPORT_REPLY);
 				}
 			}

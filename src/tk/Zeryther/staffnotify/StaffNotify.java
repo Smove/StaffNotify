@@ -3,6 +3,7 @@ package tk.Zeryther.staffnotify;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import tk.Zeryther.staffnotify.cmd.cmd_report;
+import tk.Zeryther.staffnotify.cmd.cmd_reportreply;
 import tk.Zeryther.staffnotify.cmd.cmd_staffchat;
 import tk.Zeryther.staffnotify.cmd.cmd_staffnotify;
 
@@ -34,6 +35,7 @@ public class StaffNotify extends JavaPlugin {
 		getCommand("staffchat").setExecutor(new cmd_staffchat(this));
 		getCommand("report").setExecutor(new cmd_report(this));
 		getCommand("staffnotify").setExecutor(new cmd_staffnotify(this));
+		getCommand("reportreply").setExecutor(new cmd_reportreply(this));
 	}
 	
 	private void _registerListeners(){
