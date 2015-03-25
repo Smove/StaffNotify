@@ -4,6 +4,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 import tk.Zeryther.staffnotify.cmd.cmd_report;
 import tk.Zeryther.staffnotify.cmd.cmd_staffchat;
+import tk.Zeryther.staffnotify.cmd.cmd_staffnotify;
 
 public class StaffNotify extends JavaPlugin {
 
@@ -25,12 +26,14 @@ public class StaffNotify extends JavaPlugin {
 	}
 	
 	public void onDisable(){
-		
+		System.out.println("[StaffNotify] ENABLING..");
+		System.out.println("[StaffNotify] ENABLED!");
 	}
 	
 	private void _registerCommands(){
 		getCommand("staffchat").setExecutor(new cmd_staffchat(this));
 		getCommand("report").setExecutor(new cmd_report(this));
+		getCommand("staffnotify").setExecutor(new cmd_staffnotify(this));
 	}
 	
 	private void _registerListeners(){
